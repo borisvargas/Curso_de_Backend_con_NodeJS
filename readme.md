@@ -2574,8 +2574,8 @@ Luego lo que necesitamos crear es nuestro comando el ``packages.json``
       // El coverast se hace a partir de los test que hallamos creado. con esto
       //  estamos aplicando el coverast sobre nuestro comando de test
     "cover": "nyc npm run test",
-// Estás herramientas nos ayudan a crear diferentes reportes, en esté caso
-// quiero que me abra el resporte en mi navegador.
+      // Estás herramientas nos ayudan a crear diferentes reportes, en esté caso
+      // quiero que me abra el resporte en mi navegador.
     "report": "nyc report --reported=html && open coverage/index.html"
   },
 }
@@ -2591,14 +2591,14 @@ Lo otro que debemos hacer es configurar como queremos hacer nuestro coverage, pa
     "include": ["routes", "services", "lib", "utils"]
   }
 }
-``` 
+```
 
 Estó es muy importante porque nos ayuda a vizualizar el nivel de covertura de nuestra aplicación, en el equipo se puede definir un **minimo aceptable**, **la recomendación** de minimo aceptable **es entre 60 y el 80%** porque tiene poco sentido obsecionarse por obtener el 100%, porque **es mucho más importante crear producto que simplemente estar creando test**.
 
-En esté modulo podimoss vizualizar: 
+En esté modulo podimoss vizualizar:
 
 - Como crear test para nuestros endpoints, servicios y utilidades.
-- Agregando un comando para coverage 
+- Agregando un comando para coverage
 - Debuggin inspect
 
 Challenge: Termina el resto de los test de las rutas, servicios y utilidades.
@@ -2609,7 +2609,7 @@ Challenge: Termina el resto de los test de las rutas, servicios y utilidades.
   <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
 </div>
 
-## Considerenado las mejores prácticas para el despliegue 
+## Considerenado las mejores prácticas para el despliegue
 
 En esté punto ya tu aplicación está lista para el despliegue, pero lo que debemos considerar unas muy buenas prácticas para el lanzamiento a producción.
 
@@ -2935,7 +2935,3 @@ constructor() {
 </div>
 <br>
 Una vez hecho esto, podemos probar nuestra servidor usando now dev, para que lo ejecute de manera local, y escribimos solo now para enviar el servicio a producción, y cada vez que hallá cambios, solo volvemos a hacer now al proyecto.
-<br>
-<br>
-<p align="center" style="font-style: italic;">by: Jasan Hernández :D</p>
-<br>
